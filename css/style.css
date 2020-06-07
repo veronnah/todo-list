@@ -1,0 +1,82 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap"); */
+/* latin-ext */
+@font-face {
+    font-family: 'Sacramento';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Sacramento'), local('Sacramento-Regular'), url(https://fonts.gstatic.com/s/sacramento/v7/buEzpo6gcdjy0EiZMBUG4CMf_exL.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Sacramento';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Sacramento'), local('Sacramento-Regular'), url(https://fonts.gstatic.com/s/sacramento/v7/buEzpo6gcdjy0EiZMBUG4C0f_Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+body {
+  background: linear-gradient(180deg, #1c0138 0%, #2c0055 100%);
+  background-size: cover;
+  height: 100vh;
+}
+body .container,
+body .button,
+body .sun,
+body .button span {
+  position: absolute;
+}
+body .container {
+  margin: auto;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  width: 200px;
+  height: 200px;
+}
+body .container a:hover .sun {
+  bottom: 176px;
+  transition: all 1s ease-in-out;
+  box-shadow: 0px 0px 10px #ffdc2a;
+}
+body .container a:hover .button {
+  box-shadow: 0px 0px 36px #c80de0;
+  transition: all 1s ease-in-out;
+}
+body .container .sun {
+  width: 64px;
+  height: 64px;
+  left: 55px;
+  bottom: 136px;
+  background: linear-gradient(180deg, #ffdc2a 0%, #fb2182 41.54%);
+  box-shadow: 0px 0px 36px #ffdc2a;
+  z-index: 2;
+  border-radius: 65px;
+  transition: all 1s ease-in-out;
+}
+body .container .button {
+  width: 171px;
+  height: 65px;
+  background: #2c0055;
+  box-shadow: 0px 0px 16px #c80de0;
+  border-radius: 2px;
+  z-index: 3;
+  border: 2px solid;
+  transition: all 1s ease-in-out;
+  border-image: linear-gradient(#360154, #d442d5) 30;
+}
+body .container .button span {
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  left: 56px;
+  font-size: 35px;
+  line-height: 70px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+  background: -webkit-linear-gradient(#ffdc2a, #fb2182);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
