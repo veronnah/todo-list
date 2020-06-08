@@ -1,42 +1,80 @@
-body{
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
     background-color: rgb(240, 239, 236);
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 li.list-item {
-    margin: 10px;
+    margin-left: 100px;
+    overflow: hidden;
+    word-break: break-all;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
-button{
+
+button {
     border: none;
     margin-left: 20px;
 }
-button:focus{
+
+button:focus {
     outline: none;
 }
-.btn-add{
+
+.btn-add {
     height: 30px;
     margin-left: 20px;
+    height: 3px;
+    background-color: rgba(97, 14, 14, .8);
 }
-.heading{
-    padding: 5px;
-    background-color: rgb(243, 200, 162);
-    text-align: center;
+.btn__delete-task {
+    height: 3px;
+    margin-left: 20px;
+    background-color: rgba(97, 14, 14, .8);
+
 }
-.main__card-bg{
-    /* width: 50%; */
-    padding: 20px;
-    background-color: thistle;
+.header__inner {
+    /* background-color: rgb(228, 207, 188); */
+    background-image: url("../img/pinbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(90, 16, 16);
+
 }
 
-.btn__delete-task {
-    margin-left: 20px;
+.heading {
+    padding: 5px;
+    text-align: center;
 }
+
+.main__card-bg {
+    /* width: 50%; */
+    /* padding: 20px; */
+    /* background-color: rgb(235, 217, 190);
+    box-shadow: 2px 4px 7px rgb(63, 55, 55); */
+    background: linear-gradient(90deg,
+            rgba(230, 227, 227, 0) 1.7em, rgba(166, 175, 179, 0.5) 2em) 4em 0 repeat-y,
+        linear-gradient(rgba(255, 255, 255, 0) 1.9em, rgba(0, 0, 0, .15) 2em) 0 0;
+    background-size: 2em 2em;
+    background-color: rgb(255, 255, 245);
+    font: 16px/2 'Trebuchet MS', Verdana, sans-serif;
+
+}
+
+
 .card__header {
     margin-left: 30px;
     padding: 8px;
 }
-.input__add-task{
+
+.input__add-task {
     border: none;
     width: 300px;
     height: 30px;
